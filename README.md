@@ -11,5 +11,5 @@ Skapa topic - VG delen (consumer 5-6)
 Jag startade producer som vanligt i vs code,
 och använde mig utav powershell/cmd för att starta alla konsumenter.
 
-# Databas är sqlite
+## Databas är sqlite
 In case of men det vet du säkert att du måste köra igång producern så att databasen skapas för att kunna köra konsument 4.
