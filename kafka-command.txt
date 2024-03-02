@@ -1,0 +1,28 @@
+Starta Kafka:
+Navigera till mappen där din docker-compose.yml fil finns. (cd )
+Kör kommandot "docker-compose up" i terminalen. Detta kommer att starta både Kafka och Zookeeper containers baserat på konfigurationen i din Docker Compose-fil.
+
+Kontrollera att Containers Körs:
+Kontrollera att containers körs genom att öppna en annan terminal och köra kommandot 
+"docker ps". Man bör se containers för både Kafka och Zookeeper som körs.
+
+Se alla topics:
+kafka-topics.sh --list --bootstrap-server localhost:9092
+handledorders
+orderprojekt
+
+Skapa topic:
+kafka-topics.sh --create --topic your_topic --bootstrap-server localhost:9092 --partitions 1 --replication-factor 1
+
+Describe topic
+kafka-topics.sh --zookeeper zookeeper:2181 \
+  --describe --topic orders
+
+Delete topic
+kafka-topics.sh --zookeeper zookeeper:2181 \
+  --delete --topic orders
+
+Från beginning (handled_orders)
+kafka-console-consumer.sh --bootstrap-server localhost:9092 --topic handled_orders --from-beginning
+
+https://www.conduktor.io/kafka/kafka-consumer-cli-tutorial/
