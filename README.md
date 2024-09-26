@@ -1,15 +1,18 @@
 ## Read me
 
-Skapa topic för consumer 1-4
-- kafka-topics.sh --create --topic orderprojekt --bootstrap-server localhost:9092 --partitions 1 --replication-factor 1
+Create topic for consumers 1-4
 
-Skapa topic - VG delen (consumer 5-6)
-- kafka-topics.sh --create --hanteradeorders --bootstrap-server localhost:9092 --partitions 1 --replication-factor 1
+kafka-topics.sh --create --topic orderprojekt --bootstrap-server localhost:9092 --partitions 1 --replication-factor 1
+Create topic - 
 
-- Om inte du vill byta namn själv i programmet då so to speak.
+Create topic for consumers 5-6
 
-Jag startade producer som vanligt i vs code,
-och använde mig utav powershell/cmd för att starta alla konsumenter.
+kafka-topics.sh --create --topic hanteradeorders --bootstrap-server localhost:9092 --partitions 1 --replication-factor 1
+Unless you want to rename it yourself in the program, so to speak.
 
-## Databas är sqlite
-In case of men det vet du säkert att du måste köra igång producern så att databasen skapas för att kunna köra konsument 4.
+
+I started the producer as usual in VS Code and used PowerShell/cmd to start all the consumers.
+
+The database is SQLite.
+
+In case you don’t already know, you need to start the producer so that the database is created in order to be able to run consumer 4.
