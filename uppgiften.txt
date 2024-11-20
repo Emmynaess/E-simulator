@@ -14,6 +14,7 @@ We want to know some details about sales:
 
 Total sales for the current day so far
 Total sales in the last hour
+
 1.2.3 Third Consumer
 Every 24 hours (at 00:00), a daily report should be generated. The report should include:
 
